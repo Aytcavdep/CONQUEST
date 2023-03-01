@@ -1,0 +1,104 @@
+.spring-summer-collection {
+  height: 768px;
+  position: relative;
+
+  .absolute-circle {
+    position: absolute;
+    top: 0%;
+    left: -100px;
+  }
+
+  .absolute-watch {
+    position: absolute;
+    top: -10px;
+    left: 48%;
+  }
+
+  .relative-container {
+    position: relative;
+  }
+
+  &_text-area {
+    @include flex-center();
+    height: 768px;
+    width: 1170px;
+    gap: 55px;
+    margin: 0 auto;
+
+    &__text {
+      @include flex-center(column);
+      align-items: flex-start;
+      width: 408px;
+
+      &__title {
+        @include flex-center();
+
+        &__text {
+          font-family: 'Playfair Display';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 45px;
+          line-height: 60px;
+          margin-bottom: 16px;
+          color: #1b1a17;
+        }
+      }
+
+      &__subtitle {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 39px;
+        padding-left: 52px;
+        color: #1b1a17;
+      }
+      &__text {
+        line-height: 21px;
+        margin-bottom: 64px;
+        padding-left: 52px;
+        color: rgba(27, 26, 23, 0.82);
+      }
+
+      &__button {
+        @include flex-center(column);
+        width: 205px;
+        height: 64px;
+        color: #fff;
+        background: #444240;
+        cursor: pointer;
+        margin-left: 52px;
+      }
+    }
+  }
+
+  &_text-area__price,
+  &_text-area_diameter {
+    @include flex-center();
+    width: 326px;
+    gap: 15px;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &_text-area__price {
+    margin-bottom: 480px;
+    justify-content: flex-start;
+  }
+
+  &_text-area_diameter {
+    margin-top: 525px;
+    justify-content: flex-end;
+  }
+}
+
+hr {
+  width: 47px;
+  height: 0px;
+  color: #8b8371;
+  //border: 1px solid #8b8371;
+}

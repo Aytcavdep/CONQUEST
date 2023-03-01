@@ -1,0 +1,95 @@
+.banner {
+  @include flex-center();
+  width: 1366px;
+  height: 519px;
+  overflow: hidden;
+
+  &_img {
+    width: 668px;
+    > img {
+      float: right;
+    }
+  }
+
+  &_text {
+    padding-left: 69px;
+    width: 668px;
+    &__title {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 43px;
+      margin-bottom: 38px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 150%;
+      color: #444240;
+      margin-bottom: 45px;
+    }
+
+    &__button {
+      @include flex-center();
+      width: 205px;
+      height: 64px;
+      color: #fff;
+      background-color: #d4b098;
+      cursor: pointer;
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+
+  .circle-1,
+  .circle-2,
+  .background,
+  .pagination {
+    position: absolute;
+  }
+
+  .background {
+    width: 468px;
+    height: 519px;
+    background-color: #f7f5ef;
+    z-index: -1;
+    left: 0;
+    top: -259.5px;
+  }
+
+  .circle-1 {
+    width: 365.16px;
+    height: 365.16px;
+    left: 1150px;
+    top: -400px;
+    border: 1px solid #d4b098;
+    border-radius: 50%;
+  }
+
+  .circle-2 {
+    width: 744.38px;
+    height: 744.38px;
+    left: 1150px;
+    top: -250px;
+    border: 1px solid #d4b098;
+    border-radius: 50%;
+  }
+
+  .pagination {
+    left: 550px;
+    bottom: -255px;
+
+    > pre {
+      font-family: 'Prata';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+
+      color: rgba(27, 26, 23, 0.82);
+    }
+  }
+}

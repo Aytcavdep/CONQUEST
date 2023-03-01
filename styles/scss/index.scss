@@ -1,0 +1,21 @@
+@import './mixins';
+@import './normalize';
+@import './header';
+@import './spring-summer-collection';
+@import './popular-goods';
+@import './news';
+@import './banner';
+@import './footer';
+
+body {
+  @include flex-center(column);
+  width: 1366px;
+  background-color: #fdfdfb;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1b1a17;
+  margin: 0 auto;
+}

@@ -1,0 +1,44 @@
+.news {
+  @include flex-center();
+
+  height: 631px;
+
+  &_text {
+    @include flex-center(column);
+    width: 585px;
+    align-items: flex-start;
+
+    &__title {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 43px;
+      text-align: start;
+      margin-bottom: 40px;
+    }
+
+    &__subscribe {
+      font-size: 16px;
+      line-height: 27px;
+      margin-bottom: 124px;
+      color: #444240;
+    }
+
+    &__messandgers {
+      @include flex-center();
+      gap: 18px;
+      cursor: pointer;
+    }
+  }
+
+  &_img {
+    @include flex-center();
+    gap: 10px;
+
+    &__col-1 {
+      @include flex-center(column);
+      gap: 10px;
+    }
+  }
+}

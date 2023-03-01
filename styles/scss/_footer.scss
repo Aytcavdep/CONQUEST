@@ -1,0 +1,44 @@
+.footer {
+  @include flex-center();
+  justify-content: space-evenly;
+  width: 1366px;
+  height: 275px;
+  background: #444240;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  &_contact,
+  &_about-us,
+  &_buyers,
+  &_payment-and-delivery {
+    @include flex-center(column);
+    gap: 15px;
+    align-items: flex-start;
+
+    &__title,
+    &__logo {
+      margin-bottom: 18px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+
+      color: #ffffff;
+    }
+    &__logo {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.14em;
+    }
+  }
+
+  &_contact {
+    margin-bottom: 65px;
+  }
+}

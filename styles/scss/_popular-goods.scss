@@ -1,0 +1,83 @@
+.popular-goods {
+  @include flex-center(column);
+  font-family: 'Playfair Display';
+  width: 1366px;
+  height: 720px;
+  background: #ffffff;
+
+  &__title {
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+  }
+
+  &__all-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #444240;
+    text-align: right;
+    cursor: pointer;
+
+    > hr {
+      margin: 11.5px 0 25.5px auto;
+      width: 101px;
+      color: #c4c0b6;
+    }
+  }
+
+  &_list {
+    @include flex-center();
+    gap: 30px;
+  }
+
+  &_list__card {
+    @include flex-center();
+    background: #fdfdfb;
+
+    width: 370px;
+    height: 467px;
+  }
+
+  .card {
+    @include flex-center(column);
+    align-items: flex-start;
+
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+
+      color: rgba(27, 26, 23, 0.82);
+    }
+
+    &__price {
+      font-family: 'Prata';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+
+      color: rgba(27, 26, 23, 0.82);
+    }
+
+    &__img {
+      @include flex-center();
+      width: 313px;
+      height: 313px;
+      background: linear-gradient(#fdfdfb, #fdfdfb) padding-box,
+        linear-gradient(to right, #fdfdfb, #e2d0c4) border-box;
+      border-radius: 50%;
+      border: 1px solid transparent;
+    }
+
+    &__info {
+      @include flex-center();
+      gap: 18px;
+      cursor: pointer;
+    }
+  }
+}

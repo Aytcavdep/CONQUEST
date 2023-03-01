@@ -1,0 +1,60 @@
+.header {
+  @include flex-center();
+  justify-content: space-between;
+  height: 85px;
+  width: 1170px;
+  color: #555248;
+
+  &-logo {
+    @include flex-center();
+
+    &__brand {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.14em;
+
+      color: #555248;
+    }
+  }
+
+  &_nav {
+    @include flex-center();
+    gap: 65px;
+    > a {
+      text-decoration: none;
+      color: #555248;
+    }
+  }
+
+  &-icon-button {
+    @include flex-center();
+    gap: 23px;
+    img {
+      height: 16px;
+      cursor: pointer;
+    }
+
+    &__heart {
+      position: relative;
+      &__counter {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        left: 13px;
+        top: -5px;
+        background: #e6c8b4;
+        border-radius: 50%;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 13px;
+        text-align: center;
+        color: #1b1a17;
+      }
+    }
+  }
+}
